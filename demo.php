@@ -21,7 +21,16 @@ $_SESSION['coin']='pound';
 // $id=$_SESSION['PHPSESSID'];
 
 setcookie('PHPSESSID',"",time()-1000,'/');
+// unset($_SESSION['PHPSESSID']);
 session_regenerate_id();
+// unset($_SESSION['PHPSESSID']);
+// session_destroy();
+
+session_regenerate_id();
+// session_destroy();
+
+// session_destroy();
+
 
 
 echo"<pre>";
